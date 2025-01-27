@@ -1,4 +1,4 @@
-name: base_app
+name: setting_app
 description: 'A new Flutter project.'
 
 publish_to: 'none'
@@ -11,16 +11,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
-  intl: any
 
   cupertino_icons: ^1.0.6
+  country_flags: ^3.2.0
   flutter_riverpod: ^2.6.1
   riverpod_annotation: ^2.6.1
 
-  setting_app:
-    path: ../Functions/setting_app/
+  base_app:
+    path: ../../base_app/
 
 dev_dependencies:
   flutter_test:
@@ -34,4 +32,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  generate: true
+
+  assets:
+    - assets/

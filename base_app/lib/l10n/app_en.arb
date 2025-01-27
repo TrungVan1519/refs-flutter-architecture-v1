@@ -1,4 +1,7 @@
 {
   "username": "Username",
-  "password": "Password"
+  "password": "Password",
+  "settings": "Settings",
+  "avatar": "Avatar",
+  "languages": "Languages"
 }
