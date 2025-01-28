@@ -10,7 +10,7 @@ class LanguagePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final curLangCode = ref.watch(nodAppSetting);
+    final langCode = ref.watch(nodAppSetting);
 
     return Scaffold(
       body: SafeArea(
@@ -32,7 +32,7 @@ class LanguagePage extends ConsumerWidget {
                   el.languageCode,
                   shape: const Circle(),
                 ),
-                trailing: curLangCode == el.languageCode
+                trailing: langCode == el.languageCode
                     ? const Icon(Icons.check, color: Colors.green)
                     : null,
               ),
